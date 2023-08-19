@@ -1,59 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Darumadrop+One&family=Kanit:ital,wght@0,100;0,200;0,300;1,200;1,300&family=Lumanosimo&family=Montserrat:ital,wght@0,100;0,400;1,100;1,200;1,300&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;1,200;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Tajawal:wght@300;400&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap");
 
 :root {
-  --font-family: 'Manrope', sans-serif;
-
-  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-  
-  --color-bg: #010e20;
-  --color-footer : #031B34;
-  --color-blog: #042c54;
-  --color-text: #81AFDD;
-  --color-subtext: #FF8A71;
+  font-family: "Kanit", sans-serif;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
-.app{
-   width: 400px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.box{
-  width: 200px;
-  height: 200px;
-  flex-direction: column;
-  border: 2px solid #000;
-  border-radius: 5px;
-  margin-bottom: 10px;
+
+.app {
+  height: 100vh;
+  background: rgba(22, 13, 30, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ChangeBox input{
-  border: 0;
-  outline: 0;
-  border: 2px solid #000;
-  border-radius: 5px;
-  width: 180px;
-  padding: 7px;
+.app_container {
+  height: 80vh;
+  width: 70%;
+  margin: auto;
+  padding: 2em 0;
 }
-.ChangeBox  button{
-  border: 0;
-  outline: 0;
-  border: 2px solid #000;
-  border-radius: 5px;
-  width: 200px;
-  padding: 7px;
-  margin-top: 10px;
-  cursor: pointer;
+.header {
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.header img {
+  width: 100px;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card-item {
+  background-color: #1c0144;
+  padding: 1em 2em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 0 10px;
+  box-shadow: 1px 1px 10px rgba(22, 13, 30, 0.9);
+  transition: 0.3s all ease;
+}
+.card-item:hover {
+  box-shadow: 1px 1px 10px rgba(103, 4, 4, 0.9);
+}
+.card-item img {
+  width: 70px;
+}
+.card-item h4 {
+  margin: 10px 0;
+}
+.card-item p {
+  text-align: center;
 }
